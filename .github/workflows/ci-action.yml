@@ -24,7 +24,7 @@ jobs:
 
     - name: Deploy to Railway
       run: |
-        railway up --service library-shs-be
+        railway up --service be-ch-6-challenge
 
     - name: Setup database
-      run: railway run --service library-shs-be npx prisma migrate deploy
+      run: railway run --service libe-ch-6-challenge npx prisma migrate deploy
