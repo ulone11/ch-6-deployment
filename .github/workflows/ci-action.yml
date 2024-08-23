@@ -9,6 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL}}
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
     steps:
       - name: Checkout code
